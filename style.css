@@ -212,3 +212,27 @@ p{
     .columns{display: block;}
     
 }
+
+.contents{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+
+}
+.content2{
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+
+}
+
+@media(max-width:700px){
+    .contents{display: block;}
+    
+}

@@ -68,14 +68,15 @@ h1{ font-family: "Chava";
 .reverseCount{
     background-color: blueviolet;
     
+    
 }
 
 .timer{
     display:flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
+    justify-content: center; 
+    align-items: center; 
+    gap: 90px;  
     
 }
 .time,.timeText{
@@ -86,7 +87,7 @@ h1{ font-family: "Chava";
 .list2{
     text-align: center;
     padding-top: 80px;
-    font-size: 52px;
+    font-size:calc(2.7vw + 24px) ;
     font-weight: 700;
 }
 .time{
@@ -107,14 +108,15 @@ h1{ font-family: "Chava";
 .sale{
     
     margin-bottom: 30px;
-    width: 328px;
-    padding: 20px 0px;
+    width: 328px; 
+    padding: 20px 0px; 
     border-radius:12px;
     border:solid white;
     font-size: 18px;
     font-weight: 500;
     margin-top: 57px;
     color: #6E3ABA;
+    cursor: pointer;
 }
 
 .center {
@@ -136,7 +138,7 @@ h1{ font-family: "Chava";
     right: -2px;
 }
 .list3{
-font-size: 58px;
+font-size: calc(2.7vw + 24px);
 font-weight: 500;
 line-height: 117%;
 text-transform: uppercase;
@@ -174,9 +176,10 @@ margin-top: 24px;
 }
 
 .list4 {
-    font-size: 58px;
+    font-size: calc(2.7vw + 24px);
     font-weight: 500;
     text-transform: uppercase;
+    
 }
 .columns{
     margin-top: 90px;
@@ -208,17 +211,13 @@ p{
     font-weight: 400;
     font-size: 27px;
 }
-@media(max-width:700px){
-    .columns{display: block;}
-    
-}
 
 .contents{
     margin-top: 90px;
     display: flex;
     flex-direction: row;
     gap: 120px;
-}
+    align-items:center} 
 .content1{
     display: flex;
     flex-direction: column;
@@ -229,10 +228,192 @@ p{
     display: flex;
     flex-direction: column;
     gap: 52px;
+    
+
+} 
+
+
+.content_name {
+    margin-bottom: 20px;
 
 }
-
-@media(max-width:700px){
-    .contents{display: block;}
+    /* Legend Start */
+.Legend_Wrapper h2{
+    margin-bottom: calc(5.5vw + 19.2px);
+}
+.Legend {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; 
+    
+    
+} 
+.Legend_img {
+    flex-basis: 399px;
+    flex-shrink: 1;
     
 }
+.legend_info{
+    flex-grow: 100;
+    flex-basis: 566px;
+    
+
+}
+
+.teacher_info h3 {
+    font-size: calc(1.1vw + 34px);
+    font-weight: 700;
+    line-height: 121%;
+    margin-bottom: calc(.1vw + 5.8px);
+}
+
+.teacher_info p {
+    font-size: calc(1vw + 14.2px);
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: calc(5.5vw + 19.3px);
+       
+}
+.legend_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "smile champion"
+                         "case   keyboart";
+    gap: calc(1.1vw + 26px) calc(8.8vw - 23px);
+}
+
+.card img{
+    display: block;
+}
+.card span {
+    display: block;
+    font-size: calc(0.6vw + 14px);
+    width: calc(10.4vw + 117px);
+    height: calc(1.5vw + 38px);
+    margin-top: 10px;
+    
+
+}
+
+
+
+.card:first-child{
+    grid-area: smile;
+}
+.card:nth-child(2){
+    grid-area:champion;
+}
+.card:nth-child(3){
+    grid-area:case;
+}
+.card:last-child{
+    grid-area:keyboart;
+}
+@media(max-width:1099px){
+    .Legend{
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: center;
+    } 
+    
+}
+/* Legend End */
+
+/* diplon start */
+.Diplom{
+    display: grid;
+    grid-template-columns: 449px 1fr;
+    grid-template-rows: 156px 1fr;
+    grid-template-areas: "image name"
+                         "image info";
+} 
+.name{
+    width:  calc(27.6vw + 224px);
+    height: calc(1.8vw + 113px);
+    align-self:start;
+    font-size: calc(2.7vw + 24px);
+    grid-area:name;
+    margin-bottom: 20px;
+}
+.name_info{
+    width: calc(23.6vw + 225.3px) ;
+    height: calc(4.3vw + 59px);
+    line-height: 150%;
+    grid-area: info;
+    
+    
+   
+}
+.diplom_img {
+    
+    grid-area: image;
+    margin-bottom: 20px;
+}
+#diplom_photo{
+    width:  calc(11.3vw + 285.7px);
+    height: calc(7.8vw + 199px);
+
+}
+
+   
+@media(min-width:1280px){
+    .name{
+        width: 578px ;
+        height: 136px;
+        align-self:start;
+        font-size: 58px;
+        grid-area:name;
+        margin-bottom: 20px;
+    }
+    .name_info{
+        width: 514px ;
+        height: 114px;
+        line-height: 150%;
+        grid-area: info;
+        
+        
+       
+    }
+    .diplom_img {
+        
+        grid-area: image;
+        margin-bottom: 20px;
+    }
+    #diplom_photo{
+        width:  430px;
+        height: 300px;
+    
+    }
+    
+}
+
+/* diplom end */
+@media(max-width:700px){
+    .columns{display: block;}
+    .contents{display: block;}
+    .legend_cards{
+        grid-template-areas: "smile keyboart"
+                             "champion case";
+
+    }
+
+    .Diplom{
+        display: grid;
+        grid-template-columns: 328px;
+        grid-template-rows: auto; 
+        grid-template-areas: " name"
+                              "image"
+                              "info";
+    } 
+  
+
+
+
+    
+}
+
+
+
+
+
